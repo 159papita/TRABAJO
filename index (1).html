@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio web de productos, servicios y registro de usuarios."
+    />
+    <title>Mi Web Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img width="60px" src="iemeje/logo.jpg" alt="Logo" />
+      </a>
+      <ul class="Menu-Horizontal">
+        <li><a href="">Productos</a></li>
+        <li>
+          <a href="">Servicios</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Pago servicios</a></li>
+            <li><a href="">Pago Impuestos</a></li>
+            <li><a href="">Transferencias</a></li>
+            <li><a href="">Financieros</a></li>
+          </ul>
+        </li>
+        <li><a href="">Banca por internet</a></li>
+        <li><a href="">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sección productos -->
+    <section class="seccion-productos">
+      <div class="div-gral-prod">
+        <div class="div-prod-texto">
+          <h2>El asma</h2>
+          <p>
+            El asma es una enfermedad crónica que afecta las vías respiratorias,
+            causando inflamación y estrechamiento que dificultan la respiración.
+            Los síntomas comunes incluyen tos, sibilancias (silbidos al
+            respirar), opresión en el pecho y falta de aliento. La enfermedad es
+            crónica, pero puede controlarse con tratamiento y evitando
+            desencadenantes como alérgenos, irritantes y el humo del tabaco.
+          </p>
+        </div>
+
+        <div class="div-prod-img">
+          <img src="iemeje/familia.jpg" width="300px" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección salud con video -->
+    <section class="seccion-salud">
+      <div class="div-gral-salud">
+        <!-- Texto sobre el asma -->
+        <div class="div-salud-texto">
+          <h2>¿Qué es el asma?</h2>
+          <p>
+            El asma es una enfermedad respiratoria crónica que causa dificultad
+            para respirar debido a la inflamación de las vías respiratorias. Los
+            síntomas incluyen tos, sibilancias y opresión en el pecho. Aunque no
+            tiene cura, se puede controlar con medicamentos y hábitos
+            saludables.
+          </p>
+        </div>
+
+        <!-- Video sobre el asma -->
+        <div class="div-salud-vid">
+          <iframe
+            src="https://www.youtube.com/embed/mKIr7eJb2sc?si=1BEWmqHgSACBAD60"
+            title="Video sobre el asma"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!-- LABEL/INPUT-->
+          <div class="campo">
+            <label for="nombre"> Nombres Completos: </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+          <!-- MENU DESPLEGABLE-->
+          <div class="campo">
+            <label for="nombre"> Pais:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un pais</option>
+              <option value="peru">Peru</option>
+              <option value="brasil">Brasil</option>
+              <option value="colombia">Colombia</option>
+              <option value="argentina">Argentina</option>
+            </select>
+          </div>
+          <!-- CHECKBOX-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="tecnologia"
+                  />Tecnologia
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="finanzas"
+                  />Finanzas
+                </label>
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="educacion"
+                  />Educacion</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="arte"
+                  />Arte</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="literatura"
+                  />Literatura</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Radio-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="masculino"
+                  />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="femenino"
+                  />Femenino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="nodeseo" />No
+                  deseo</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="iemeje/logo.jpg" alt="Logo" class="footer-logo" />
+            <p>ASTHMA CONTROL</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

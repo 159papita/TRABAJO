@@ -1,0 +1,291 @@
+/*menu*/
+.topheader {
+  position: fixed;
+  background-color: rgb(24, 198, 241);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menu-Horizontal li a {
+  display: block;
+  text-decoration: none;
+}
+
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 6.25rem;
+  background-color: rgb(24, 198, 241);
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li a {
+  padding: 0.938rem 0.938rem 0.938rem 1.25rem;
+}
+
+/*SECCION PRODUCTOS */
+.seccion-productos {
+  padding: 6.25rem 2.5rem;
+  background-color: #94f7f7;
+}
+
+.div-gral-prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.div-prod-texto {
+  flex: 1;
+}
+
+.div-prod-texto h2 {
+  color: black;
+  margin-bottom: 0.938rem;
+}
+
+.div-prod-texto p {
+  color: black;
+  line-height: 1.5;
+}
+
+.div-prod-img {
+  flex: 1;
+}
+
+.div-prod-img img {
+  width: 100%;
+  max-width: 31.25rem;
+  height: auto;
+}
+
+/* --- SECCIÓN SALUD --- */
+.seccion-salud {
+  background-color: #d8f9ff;
+  padding: 3.75rem 1.25rem;
+}
+
+.div-gral-salud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+/* Texto */
+.div-salud-texto {
+  flex: 1;
+  min-width: 17.5rem;
+}
+
+.div-salud-texto h2 {
+  color: #005b5b;
+  margin-bottom: 0.938rem;
+  font-size: 1.8rem;
+}
+
+.div-salud-texto p {
+  color: #003d3d;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Video */
+.div-salud-vid {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  max-width: 31.25rem;
+  aspect-ratio: 16/9;
+}
+
+.div-salud-vid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.625rem;
+}
+
+/* Responsividad */
+@media (max-width: 48rem) {
+  .div-gral-salud {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .div-salud-texto {
+    order: 2;
+  }
+
+  .div-salud-vid {
+    order: 1;
+    max-width: 100%;
+  }
+}
+
+/*FORMULARIO*/
+.seccion-formulario {
+  background-color: rgb(44, 162, 209);
+  padding: 2.5rem;
+  border: 0.188rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.div-cont-formulario {
+  background-color: rgb(68, 194, 216);
+  padding: 1.875rem;
+  border: 0.125rem solid #85d3f7;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+.campo {
+  border: 0.063rem;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: rgb(128, 205, 228);
+}
+
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+/*INPUTS Y SELECT*/
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.063rem solid blueviolet;
+  border-radius: 0.313rem;
+}
+
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  border: 0.063rem;
+  background-color: rgb(162, 213, 229);
+  border-radius: 0.063rem;
+}
+
+button {
+  background-color: rgb(10, 178, 190);
+  color: black;
+  border: 0.0625rem solid black;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 75rem;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 12.5rem;
+}
+
+.footer-logo {
+  width: 3.75rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 12.5rem;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 12.5rem;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 48rem) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
